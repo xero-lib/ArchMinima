@@ -1,0 +1,1 @@
+irust, wired-notify, pipewire-jack-dropin
