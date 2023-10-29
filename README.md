@@ -34,7 +34,7 @@ cd ArchMinima/
 ./install.sh
 ```
 ## Modules
-<h3><em>Not yet implemented</em></h3>
+<h3><em>Not yet implemented, all packages will be installed</em></h3>
 
 | Type | Name | Description |
 | --- | --- | --- |
