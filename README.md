@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/v/release/xero-lib/ArchMinima?include_prereleases&color=%4a07b0" alt="Release version">
+    <img src="https://img.shields.io/github/v/release/xero-lib/ArchMinima?include_prereleases&color=%420dab" alt="Release version">
     <img src="https://img.shields.io/badge/name-German%20Chamomile-1793d1" alt="Release name">
   <img src="https://img.shields.io/badge/platform-arch%3E%3D6.2.13-1793d1" alt="Supported OS versions">
 </p>
