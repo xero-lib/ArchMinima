@@ -53,8 +53,8 @@ cd ArchMinima/
 | optional/ | discord | Install Discord (requires AUR helper) |
 | optional/ | minecraft | Install Minecraft launcher (requires AUR helper) |
 | optional/ | obs | Install OBS and ffmpeg-obs, setup replay buffer |
-| optional/ | spotify | Install Spotify (requires flathub) |
-| optional/ | steam | Install Steam (requires fusion non-free) |
+| optional/ | spotify | Install Spotify |
+| optional/ | steam | Install Steam |
 
 ## Contributing
 Pull requests adding new modules or editing existing ones are welcome, but if I don't think I would use it myself I can't promise to merge it. If you have any doubt, [issues](https://github.com/xero-lib/ArchMinima/issues) are also encouraged and I'll let you know if it's something I'd be willing to merge or work on myself.
