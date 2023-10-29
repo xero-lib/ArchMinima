@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/platform-arch%3E%3D6.2.13-1793d1" alt="Supported OS versions">
 </p>
 
-<p align="center">ArchMinima aims to capture the minimalistic, clean layout of <code>dwm</code> while improving on some basic QoL aspects. The latest release, <em>German Chamomile</em>, is designed to be cloned or <code>curl</code>ed onto an Arch install ISO and piped into a local archive file.</p>
+<p align="center">ArchMinima aims to capture the minimalistic, clean layout of <code>dwm</code> while improving on some basic QoL aspects. The latest release, <em>German Chamomile</em>, is designed to be cloned or <code>curl</code>ed onto a live Arch install ISO environment.</p>
 <p align="center">
   <img src="https://github.com/xero-lib/ArchMinima/assets/54485853/35a36b7c-5139-4b2d-acf5-9a432c338c91" alt="Desktop screenshot: 9 tags, Memory status, Volume level, Available main storage availability, and date. Background is dark subway">
 </p>
