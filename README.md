@@ -6,7 +6,7 @@
   <!--   two brs because svg padding is inconsistent   -->
 </p>
 <p align="center">
-    <em>Arch install script to build a fast, minimalistic, utilitarian interface.</em>
+    <em>Arch install script to build a fast, minimalistic, utilitarian environment</em>
 </p>
 
 <p align="center">
