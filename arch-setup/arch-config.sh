@@ -11,11 +11,16 @@ clear
 
 echo -n "Setting root password..."
 passwd 
+
+groupadd uucp 
+groupadd libvirt 
+groupadd wireshark
+
 clear
 
 echo -n "Enter superuser account name: "
 read user
-useradd -m -s /bin/fish "$user" -G uucp libvirt wireshark
+useradd -m -s /bin/fish "$user" -G uucp,libvirt,wireshark
 
 echo "Setting password for ${user}..."
 passwd "$user"
