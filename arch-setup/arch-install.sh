@@ -15,6 +15,7 @@ then
 	exit 2
 fi
 
+
 echo -en "Creating EFI boot (+256MB) swap (+$(lsmem | grep "Total online" | awk '{print $NF}')) and remainder as Linux FS\nStarting fdisk..."
 
 # to create the partitions programatically (rather than manually)
@@ -49,6 +50,11 @@ sed -e 's/\s*\([\+0-9a-zA-Z]*\).*/\1/' << EOF | fdisk ${TGTDSK}
   20 # partition type 20: Linux filesystem
   w # write the partition table, which quits
 EOF
+
+if [[ $TGTDSK == /dev/nvme* ]]
+then
+	TGTDSK = "${TGTDSK}p"
+fi
 
 mkfs.fat "${TGTDSK}1"
 mkswap "${TGTDSK}2"
