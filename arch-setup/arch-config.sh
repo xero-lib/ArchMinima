@@ -9,6 +9,9 @@ read hostname
 echo "$hostname" > /etc/hostname
 clear
 
+echo "en_US.UTF-8 UTF-8" > /etc/local.gen
+locale-gen
+
 echo -n "Setting root password..."
 passwd 
 
@@ -41,13 +44,15 @@ echo "Initializing pacman..."
 pacman-key --init
 pacman-key --populate
 pacman -Sy --needed --noconfirm archlinux-keyring && pacman -Su --noconfirm
-pacman -S --needed --noconfirm iwd vim man-db man-pages git libvirt virt-manager docker docker-compose rustup xdg-user-dirs xdg-utils openssh
+pacman -S --needed --noconfirm iwd vim man-db man-pages git libvirt virt-manager docker docker-compose rustup cargo xdg-user-dirs xdg-utils openssh dhcpcd nerd-fonts noto-fonts-emoji
 
-su "$user" -c xdg-user-dirs-update
+runuser -u "$user" -c xdg-user-dirs-update
 
 ln -s '/lib/systemd/system/libvirtd.service' '/etc/systemd/system/multi-user.target.wants/libvirtd.service'
 ln -s '/lib/systemd/system/docker.service' '/etc/systemd/system/multi-user.target.wants/docker.service'
 ln -s '/lib/systemd/system/sshd.service' '/etc/systemd/system/multi-user.target.wants/sshd.service'
+ln -s '/lib/systemd/system/dhcpcd.service' '/etc/systemd/system/multi-user.target.wants/dhcpcd.service'
+ln -s '/lib/systemd/system/iwd.service' '/etc/systemd/system/multi-user.target.wants/iwd.service'
 
 install -d -m 0755 -o $user "/home/${user}/Applications"
 cd "/home/${user}/Applications"
