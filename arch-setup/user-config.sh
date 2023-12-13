@@ -11,7 +11,7 @@ sudo -SE echo -n ""
 		lib32-libva lib32-mesa-utils lib32-mesa lib32-glu kdeconnect fdupes fd mlocate xpdf gdb minecraft-launcher ida-free ghidra radare2 iaito r2ghidra hexedit cmake \
 		dust bat qjackctl qt5ct qt6ct cargo-asm cargo-zigbuild cargo-tauri cargo-watch nitrogen picom ddrescue foremost safecopy testdisk ffmpeg-obs obs-studio yt visual-studio-code-bin \
 		gimp figlet hyperfine kalc yazi blender dolphin reptyr rsync ngrok ncdu peaclock rofi scrot xclip greenclip tenacity nushell netdiscover \
-		htop nmap terminology jq yq 
+		htop nmap terminology jq yq yt-dlp obsidian
 
 echo "QT_QPA_PLATFORMTHEME=qt6ct" > /etc/environment
 
